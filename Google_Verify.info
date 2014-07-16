@@ -5,4 +5,3 @@ package = bcgreen
 core = 7.x
 files[] = Google_Verify.module
 configure = admin/config/system/Google_Verify
-s
