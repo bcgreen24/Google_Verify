@@ -1,0 +1,8 @@
+;$Id$
+name = Google Webmaster Tools - verification meta tag
+description = Google Webmaster Tools - verification meta tag
+package = bcgreen
+core = 7.x
+files[] = Google_Verify.module
+configure = admin/config/system/Google_Verify
+s

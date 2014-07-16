@@ -1,0 +1,67 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * A module exemplifying Drupal coding practices and APIs.
+ *
+ * This module provides a block that lists all of the
+ * installed modules. It illustrates coding standards,
+ * practices, and API use for Drupal 7.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function Google_Verify_help($path, $arg) {
+    if ($path == 'admin/help#Google_Verify') {
+        return t('Google Webmaster Tools - verification meta tag');
+    }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function Google_Verify_block_info() {
+    $blocks = array();
+
+    $blocks['list_modules'] = array(
+        'info' => t('Google Webmaster Tools - verification meta tag'),
+        'cache' => DRUPAL_NO_CACHE,
+    );
+
+    return $blocks;
+}
+
+/**
+ * Implements hook_page_alter().
+ */
+function Google_Verify_page_alter(&$page) {
+    $meta_tag = variable_get('google_meta_tag');
+    drupal_add_html_head($meta_tag);
+}
+
+function Google_Verify_menu(){
+    $items = array();
+    $items['admin/config/system/Google_Verify'] = array(
+        'title' => 'Google verification code (meta tag)',
+        'description' => 'Used to verify site with Google',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('Google_Verify_form'),
+        'access arguments' => array('access administration pages'),
+        'type' => MENU_NORMAL_ITEM,
+    );
+    return $items;
+}
+
+function Google_Verify_form($form, &$form_state){
+    $form['google_meta_tag'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Meta tag for Google verification.'),
+        '#size' => 64,
+        '#maxlength' => 64,
+        '#description' => t('The site will be verified when Google finds this meta tag in the <head> section of the site.'),
+        '#required' => TRUE,
+    );
+    return system_settings_form($form);
+}
