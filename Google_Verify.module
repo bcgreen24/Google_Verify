@@ -38,7 +38,7 @@ function Google_Verify_block_info() {
  */
 function Google_Verify_page_alter() {
     $meta_tag = variable_get('google_meta_tag');
-    drupal_set_message("<br/><p><h3>$meta_tag</h3></p>");
+    print($meta_tag);
     drupal_add_html_head($meta_tag, "google_meta_tag_id");
 }
 
