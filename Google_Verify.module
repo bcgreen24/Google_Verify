@@ -38,7 +38,7 @@ function Google_Verify_block_info() {
  */
 function Google_Verify_page_alter(&$page) {
     $meta_tag = variable_get('google_meta_tag');
-    drupal_add_html_head($meta_tag);
+    drupal_add_html_head($meta_tag, "google_meta_tag_id");
 }
 
 function Google_Verify_menu(){
@@ -55,6 +55,7 @@ function Google_Verify_menu(){
 }
 
 function Google_Verify_form($form, &$form_state){
+
     $form['google_meta_tag'] = array(
         '#type' => 'textfield',
         '#title' => t('Meta tag for Google verification.'),
