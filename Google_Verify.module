@@ -37,8 +37,8 @@ function Google_Verify_block_info() {
  * Implements hook_page_alter().
  */
 function Google_Verify_boot(&$page) {
-    $meta_tag = variable_get('google_meta_tag');
-    drupal_add_html_head($meta_tag, "google_meta_tag_id");
+    //$meta_tag = variable_get('google_meta_tag');
+   // drupal_add_html_head($meta_tag, "google_meta_tag_id");
 }
 
 function Google_Verify_menu(){
