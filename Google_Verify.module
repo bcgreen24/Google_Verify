@@ -20,22 +20,10 @@ function Google_Verify_help($path, $arg) {
 }
 
 /**
- * Implements hook_block_info().
- */
-function Google_Verify_block_info() {
-    $blocks = array();
-
-    $blocks['list_modules'] = array(
-        'info' => t('Google Webmaster Tools - verification meta tag'),
-        'cache' => DRUPAL_NO_CACHE,
-    );
-    return $blocks;
-}
-
-/**
  * Implements hook_page_alter().
  */
 function Google_Verify_page_alter() {
+    print("Hello");
     $meta_tag = variable_get('google_meta_tag');
     drupal_add_html_head(array('#type' => 'markup', '#markup' => $meta_tag), "google_meta_tag_id");
 }

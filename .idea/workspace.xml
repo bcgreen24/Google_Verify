@@ -29,7 +29,7 @@
       <file leaf-file-name="Google_Verify.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Google_Verify.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1417" selection-end="1417" vertical-scroll-proportion="1.2836767" vertical-offset="0" max-vertical-offset="1155">
+            <state line="25" column="19" selection-start="544" selection-end="544" vertical-scroll-proportion="0.38034865" vertical-offset="135" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="222" />
+    <option name="x" value="167" />
     <option name="y" value="67" />
     <option name="width" value="1251" />
     <option name="height" value="774" />
@@ -166,7 +166,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="222" y="67" width="1251" height="774" extended-state="0" />
+    <frame x="167" y="67" width="1251" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -174,7 +174,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16973579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16973579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -239,7 +239,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Google_Verify.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1417" selection-end="1417" vertical-scroll-proportion="1.2836767" vertical-offset="0" max-vertical-offset="1155">
+        <state line="25" column="19" selection-start="544" selection-end="544" vertical-scroll-proportion="0.38034865" vertical-offset="135" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
