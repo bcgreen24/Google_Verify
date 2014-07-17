@@ -41,17 +41,11 @@ function Google_Verify_menu(){
 }
 
 function Google_Verify_form($form, &$form_state){
-    $default = "";
-    if(variable_get('google_meta_tag') != ""){
-        $default = variable_get('google_meta_tag');
-    }
-    $form = array();
     $form['google_meta_tag'] = array(
         '#type' => 'textfield',
         '#title' => t('Meta tag for Google verification.'),
-        '#value' => $default,
+        '#default_value' => variable_get('google_meta_tag'),
         '#size' => 96,
-        '#maxlength' => 96,
         '#description' => t('The site will be verified when Google finds this meta tag in the <head> section of the site.'),
         '#required' => TRUE,
     );
