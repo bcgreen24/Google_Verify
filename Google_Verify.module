@@ -45,6 +45,7 @@ function Google_Verify_form($form, &$form_state){
     if(variable_get('google_meta_tag') != ""){
         $default = variable_get('google_meta_tag');
     }
+    $form = array();
     $form['google_meta_tag'] = array(
         '#type' => 'textfield',
         '#title' => t('Meta tag for Google verification.'),
