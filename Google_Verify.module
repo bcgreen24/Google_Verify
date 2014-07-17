@@ -23,7 +23,6 @@ function Google_Verify_help($path, $arg) {
  * Implements hook_page_alter().
  */
 function Google_Verify_page_alter() {
-    print("Hello");
     $meta_tag = variable_get('google_meta_tag');
     drupal_add_html_head(array('#type' => 'markup', '#markup' => $meta_tag), "google_meta_tag_id");
 }
