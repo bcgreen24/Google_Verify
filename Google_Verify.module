@@ -46,7 +46,7 @@ function Google_Verify_form($form, &$form_state){
         '#title' => t('Meta tag for Google verification.'),
         '#default_value' => variable_get('google_meta_tag'),
         '#size' => 96,
-        '#description' => t('The site will be verified when Google finds this meta tag in the <head> section of the site.'),
+        '#description' => t('The site will be verified when Google finds this meta tag in the head section of the site.'),
         '#required' => TRUE,
     );
     return system_settings_form($form);
